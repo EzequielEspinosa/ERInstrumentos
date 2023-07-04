@@ -15,8 +15,8 @@
             <h1>E.R Instrumentos</h1>
             <div class="alineacion">
                 <img src="../img/guitarra-logo.jpg" alt="logo-guitarra">
-                <a href="../index.html">Home</a>
-                <a href="#">iniciar sesion</a>
+                <a class="boton" href="../index.html">Home</a>
+                <a class="boton" href="#">iniciar sesion</a>
             </div>
         </section>
     </header>
@@ -27,39 +27,43 @@
             <a href="instrumentos2.html">instrumentos de viento</a>
             <a href="nosotros.html">quienes somos</a>
             <a href="contacto.html">contacto</a>
-    
     </nav>
 
     <!--Main-->
-    <main class="formularios">
+    <main>
         <h2>contacto</h2>
         <section>
             <form class="formulario">
                 <fieldset>
-                    <legend>contactanos llenando todos los campos</legend>
-                    <div class="formulario-campo">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <legend>Contactános llenando todos los campos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu Email" required>
+                        </div>
+
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div> <!-- .contenedor-campos -->
+    
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
                     </div>
-                    <div class="formulario-campo">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido" placeholder="Tu apellido" required>
-                    </div>
-                    <div class="formulario-campo">
-                        <label for="correo">Correo</label>
-                        <input type="email" name="correo" placeholder="Tu e-mail" required>
-                    </div>
-                    <div class="formulario-campo">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" placeholder="Deja un mensaje"></textarea>
-                    </div>
-                    <div class="boton">
-                        <input type="submit" value="Enviar">
-                    </div>   
                 </fieldset>
-            </form>
+            </form> 
         </section>
-        
     </main>
 
     <!--Footer-->

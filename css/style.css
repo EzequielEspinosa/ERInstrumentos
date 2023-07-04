@@ -24,31 +24,59 @@ h1, h2, h3{
 }
 p{
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #ffff;
 }
 
 body{
-
 font-family: 'Krub', sans-serif;
 text-align: center;
 background-color: black;
 
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-areas:
 "header header header header"
 "nav nav nav nav"
-"section main main aside"
-"section main main aside"
-"section main main aside"
+"article main main aside"
+"article main main aside"
+"article main main aside"
 "footer footer footer footer";
 }
-
 img{
     width: 200px;
     height: 200px;
+    border-radius: 5px;
 }
-/*Encabezado Principal*/
+.boton{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding:1px 5px;
+}
+/*Grid Area*/
+header{
+grid-area: header;
+}
+nav{
+grid-area: nav;
+}
+main{
+grid-area: main;
+}
+article{
+grid-area: article;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+
+/*Header*/
 .encabezado{
     background-image: url(../img/guitarra-encabezado.jpg);
     background-position: center;
@@ -64,16 +92,7 @@ img{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.alineacion a{
-    color:rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: aliceblue;
-    border-radius: 5px;
-    padding:1px 5px;
-}
+
 .alineacion img{
     width: 100px;
     height: 100px;
@@ -85,9 +104,9 @@ img{
     background-color: #926f34;
     padding: 5px;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
-  
+    justify-content: space-around;
+
 }
 @media (min-width: 468px) {
     .navegacionPrincipal{
@@ -109,64 +128,106 @@ img{
 }
 
 /*Main*/
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.menuPrincipal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.menuImagen{
+    width: auto;
+    height: auto;
+}
+
+/*article*/
+.videos h2{
+    text-transform: none;
+}
+.videos iframe{
+    border-radius: 5px;
+}
 
 /*aside*/
 .historia-guitarra img{
     margin: 3px 5px;
 }
-/*article*/
-article h2, h3{
-    text-transform: none;
-
-}
 
 /*Formulario*/
-.contactoFormulario{
-    background-color: rgb(62, 63, 64);
+.formulario {
+    background-color: rgb(57, 56, 56);
+    width: min( 600px, 100% );
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.formularios section{
-    box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);
-    margin-bottom: 10px;
-    border-radius: 5px;    
-    width: 500px;
-    height: 300px;
-    
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.formulario fieldset{
+.formulario fieldset {
     border: none;
-    
 }
-.formulario-campo{
-padding-bottom: 5px;
-margin-bottom: 5px;
-text-transform: uppercase;
-}
-.formulario-campo label{
-    font-weight: bold;
-    font-size: 20px;
-}
-.formulario-campo input{
-    font-size: 20px;
-    border-radius: 5px;
-}
-.formulario legend{
+.formulario legend {
+    text-align: center;
+    font-size: 18px;
     text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: rgb(181, 181, 30);
+}
+
+@media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 200px ;
+        column-gap: 10px;
+    }
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+}
+.campo {
+    margin-bottom: 10px;
+}
+.campo label {
     color: #ffff;
     font-weight: bold;
-    padding: 10px;
+    margin-bottom: 5px;
+    display: block;
 }
-.boton{
-text-align: right;
+.campo textarea {
+    height: 150px;
 }
-.formulario-campo textarea{
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 15px;
     border-radius: 5px;
+}
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+.flex {
+    display: flex;
+}
+.alinear-derecha {
+    justify-content: flex-end;
 }
 
 /*Footer*/
@@ -179,25 +240,4 @@ text-align: right;
 
 .iconos-footer{
     display: inline;
-}
-
-/*Grid Area*/
-
-header{
-grid-area: header;
-}
-nav{
-grid-area: nav;
-}
-section{
-grid-area: section;
-}
-main{
-grid-area: main;
-}
-aside{
-    grid-area: aside;
-}
-footer{
-    grid-area: footer;
 }
