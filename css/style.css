@@ -84,6 +84,7 @@ footer{
     background-size: cover;
     height: 100%;
     padding: 15px;
+
 }
 
 .alineacion{
@@ -108,13 +109,7 @@ footer{
     justify-content: space-around;
 
 }
-@media (min-width: 468px) {
-    .navegacionPrincipal{
-    flex-direction: row;
-    position: sticky;
-    top: 10px;
-    }
-}
+
 .navegacionPrincipal a{
     font-size: 25px;
     text-decoration: none;
@@ -161,6 +156,7 @@ footer{
 /*aside*/
 .historia-guitarra img{
     margin: 3px 5px;
+
 }
 
 /*Formulario*/
@@ -184,18 +180,6 @@ footer{
     color: rgb(181, 181, 30);
 }
 
-@media (min-width: 768px) {
-    .contenedor-campos {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto 200px ;
-        column-gap: 10px;
-    }
-    .campo:nth-child(3),
-    .campo:nth-child(4) {
-        grid-column: 1 / 3;
-    }
-}
 .campo {
     margin-bottom: 10px;
 }
@@ -218,11 +202,7 @@ footer{
 .w-sm-100 {
     width: 100%;
 }
-@media (min-width: 768px) {
-    .w-sm-100 {
-        width: auto;
-    }
-}
+
 .flex {
     display: flex;
 }
@@ -240,4 +220,32 @@ footer{
 
 .iconos-footer{
     display: inline;
+}
+
+/*MOBILES*/
+@media (min-width: 468px) {
+    .navegacionPrincipal{
+    flex-direction: row;
+    position: sticky;
+    top: 10px;
+    }
+}
+
+/*TABLETS*/
+@media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 200px ;
+        column-gap: 10px;
+    }
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+}
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
 }
