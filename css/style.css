@@ -28,19 +28,19 @@ p{
 }
 
 body{
-font-family: 'Krub', sans-serif;
-text-align: center;
-background-color: black;
-
-display: grid;
-grid-template-areas:
-"header header header header"
-"nav nav nav nav"
-"article main main aside"
-"article main main aside"
-"article main main aside"
-"footer footer footer footer";
+    font-family: 'Krub', sans-serif;
+    text-align: center;
+    background-color: black;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "aside main main section"
+    "footer footer footer footer";
 }
+
 img{
     width: 200px;
     height: 200px;
@@ -66,11 +66,11 @@ grid-area: nav;
 main{
 grid-area: main;
 }
-article{
-grid-area: article;
-}
 aside{
     grid-area: aside;
+}
+section{
+    grid-area: section;
 }
 footer{
     grid-area: footer;
@@ -84,14 +84,12 @@ footer{
     background-size: cover;
     height: 100%;
     padding: 15px;
-
 }
 
 .alineacion{
     display: flex;
     align-items: end;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .alineacion img{
@@ -102,11 +100,11 @@ footer{
 
 /*Navegacion Principal*/
 .navegacionPrincipal{
-    background-color: #926f34;
+    background-color: #c0a068;
     padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -115,50 +113,58 @@ footer{
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-weight: bold;
-    border: 4px solid black;
+    font-weight: normal;
+    border: 2px solid black;
     border-radius: 13px;
     padding: 2px 5px;
-    margin: 2px;
+    margin: 5px;
+    flex-direction: row;
+}
+.dropdown-menu{
+    background-color:#c0a068;
+}
+.dropdown-item:hover{
+    background-color:#926f34;
+}
+.show{
+padding: 3px;
 }
 
-/*Main*/
+/*Menu-index*/
+.videos h2{
+    text-transform: none;
+}
+.videos iframe{
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+}
+/*Menu-cuerdas*/
+.instrumentosC{
+    grid-template-columns: none;
+}
+.menuPrincipal{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+
+}
+
+/*menu-nosotros*/
 .menu{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
     row-gap: 10px;
     justify-items: center;
     align-items: center;
 }
 
-.menuPrincipal{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
-}
-
-.menuImagen{
-    width: auto;
-    height: auto;
-}
-
-/*article*/
-.videos h2{
-    text-transform: none;
-}
-.videos iframe{
-    border-radius: 5px;
-}
-
-/*aside*/
-.historia-guitarra img{
+/*section- index*/
+.historia img{
     margin: 3px 5px;
-
 }
-
 /*Formulario*/
 .formulario {
     background-color: rgb(57, 56, 56);
@@ -222,15 +228,6 @@ footer{
     display: inline;
 }
 
-/*MOBILES*/
-@media (min-width: 468px) {
-    .navegacionPrincipal{
-    flex-direction: row;
-    position: sticky;
-    top: 10px;
-    }
-}
-
 /*TABLETS*/
 @media (min-width: 768px) {
     .contenedor-campos {
@@ -247,5 +244,45 @@ footer{
 @media (min-width: 768px) {
     .w-sm-100 {
         width: auto;
+    }
+}
+
+/*MOBILES*/
+/*body*/
+@media (min-width: 320px) and (max-widht: 576px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "section"
+        "footer";
+    }
+    .menuPrincipal{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        justify-content: center;
+    }
+}
+/*Navegacion principal*/
+@media (min-width: 480px){
+    .navegacionPrincipal{
+        flex-direction:row;
+    }
+}
+/*Menu Principal*/
+@media (min-width: 480px){
+    .menuPrincipal{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}
+/*Menu Nosotros*/
+@media (min-width: 480px) {
+    .menu{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
