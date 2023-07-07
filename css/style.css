@@ -249,7 +249,7 @@ padding: 3px;
 
 /*MOBILES*/
 /*body*/
-@media (min-width: 320px) and (max-widht: 576px){
+@media (min-width: 320px) and (max-width: 500px){
     body{
         grid-template-columns: 1fr;
         grid-template-areas:
