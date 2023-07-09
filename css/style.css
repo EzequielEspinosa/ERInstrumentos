@@ -139,6 +139,35 @@ padding: 3px;
     width: 80%;
     height: 80%;
 }
+.historia{
+    width: auto;
+    margin-top: 10px;
+}
+.card{
+    background-color:#c0a068;
+}
+.card img{
+    padding: 5px;
+}
+.card-title{
+    color: black;
+    font-weight: bold;
+}
+.card-text{
+    font-family: 'Krub', sans-serif;
+    color: #4a3511;
+}
+.btn-primary:hover{
+    background-color: #c0a068;
+    color:#4a3511;
+    border-color: #4a3511;
+}
+.btn-primary{
+    background-color:#926f34;
+    border-color: black;
+    color: black;
+}
+
 /*Menu-cuerdas*/
 .instrumentosC{
     grid-template-columns: none;
@@ -161,10 +190,7 @@ padding: 3px;
     align-items: center;
 }
 
-/*section- index*/
-.historia img{
-    margin: 3px 5px;
-}
+
 /*Formulario*/
 .formulario {
     background-color: rgb(57, 56, 56);
