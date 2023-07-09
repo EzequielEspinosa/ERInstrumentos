@@ -104,7 +104,8 @@ footer{
     padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -122,12 +123,24 @@ footer{
 }
 .dropdown-menu{
     background-color:#c0a068;
+    text-align: center;
 }
 .dropdown-item:hover{
     background-color:#926f34;
 }
 .show{
-padding: 3px;
+    padding-right: 10px;
+}
+.form-control{
+    font-family: 'Krub', sans-serif;
+}
+.btn-outline-success{
+    color: black;
+    border-color: black;
+}
+.btn-outline-success:hover{
+    background-color:#926f34;
+    border-color: #ffff;
 }
 
 /*Menu-index*/
@@ -189,7 +202,6 @@ padding: 3px;
     justify-items: center;
     align-items: center;
 }
-
 
 /*Formulario*/
 .formulario {
