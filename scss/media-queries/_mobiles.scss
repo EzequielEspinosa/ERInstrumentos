@@ -1,0 +1,36 @@
+/*MOBILES*/
+/*body*/
+@media (min-width: 320px) and (max-width: 500px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "section"
+        "footer";
+    }
+    .menuPrincipal{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        justify-content: center;
+    }
+}
+/*Navegacion principal*/
+@media (min-width: 480px){
+    .navegacionPrincipal{
+        flex-direction:row;
+        justify-content: center;
+    }
+    /*Menu Principal*/
+    .menuPrincipal{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    /*Menu Nosotros*/
+    .menu{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

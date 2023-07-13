@@ -1,0 +1,39 @@
+/*Menu-index*/
+.videos h2{
+    text-transform: none;
+}
+.videos iframe{
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+}
+.historia{
+    width: auto;
+    margin-top: 10px;
+}
+.card{
+    background-color:$color-primario;
+    img{
+        padding: 5px;
+    }
+}
+
+.card-title{
+    color: $color-principal;
+    font-weight: bold;
+}
+.card-text{
+    font-family: 'Krub', sans-serif;
+    color:$color-principal;
+}
+
+.btn-primary{
+    background-color:$color-secundario;
+    border-color: $color-principal;
+    color:$color-principal;
+    &:hover{
+        background-color: $color-primario;
+        color:$color-principal;
+        border-color: $color-principal;
+    }
+}

@@ -1,0 +1,58 @@
+/*Globales*/
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 25px;
+}
+h1, h2, h3{
+    text-align: center;
+    text-transform: uppercase;
+    color:$color-terceario;
+    padding: 5px;
+}
+p{
+    text-align: center;
+    color: $color-terceario;
+}
+
+body{
+    font-family: $fuente-pricipal;
+    text-align: center;
+    background-color: $color-principal;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "aside main main section"
+    "footer footer footer footer";
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.boton{
+    color:$color-principal;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: $color-terceario;
+    border-radius: 5px;
+    padding:1px 5px;                              
+    width: auto;
+}

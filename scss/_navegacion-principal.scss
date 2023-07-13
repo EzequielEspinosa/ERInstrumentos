@@ -1,0 +1,43 @@
+/*Navegacion Principal*/
+.navegacionPrincipal{
+    background-color:$color-primario;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a{
+        font-size: 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-principal;
+        font-weight: normal;
+        border: 2px solid $color-principal;
+        border-radius: 13px;
+        padding: 2px 5px;
+        margin: 5px;
+        flex-direction: row;
+    }
+
+}
+
+.dropdown-menu{
+    background-color:$color-primario;
+    text-align: center;
+}
+.dropdown-item:hover{
+    background-color:$color-secundario;
+}
+.show{
+    padding-right: 10px;
+}
+.form-control{
+    font-family:$fuente-pricipal;
+}
+.btn-outline-success{
+    color:$color-principal;
+    border-color:$color-principal;
+    &:hover{
+        background-color:$color-secundario;
+        border-color:$color-terceario;
+    }
+}

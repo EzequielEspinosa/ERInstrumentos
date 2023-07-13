@@ -1,4 +1,4 @@
-/*Globales*/
+/*variables*/ /*Globales*/
 @import url("https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
@@ -46,12 +46,12 @@ img {
 }
 
 .boton {
-  color: rgb(0, 0, 0);
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: bold;
-  background-color: aliceblue;
+  background-color: white;
   border-radius: 5px;
   padding: 1px 5px;
   width: auto;
@@ -180,7 +180,7 @@ footer {
 
 .card-text {
   font-family: "Krub", sans-serif;
-  color: #4a3511;
+  color: black;
 }
 
 .btn-primary {
@@ -190,8 +190,8 @@ footer {
 }
 .btn-primary:hover {
   background-color: #c0a068;
-  color: #4a3511;
-  border-color: #4a3511;
+  color: black;
+  border-color: black;
 }
 
 /*Menu-cuerdas*/
@@ -224,31 +224,27 @@ footer {
   padding: 20px;
   border-radius: 10px;
 }
-
 .formulario fieldset {
   border: none;
 }
-
 .formulario legend {
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 20px;
-  color: rgb(181, 181, 30);
+  color: #926f34;
 }
 
 .campo {
   margin-bottom: 10px;
 }
-
 .campo label {
   color: white;
   font-weight: bold;
   margin-bottom: 5px;
   display: block;
 }
-
 .campo textarea {
   height: 150px;
 }
@@ -296,8 +292,6 @@ footer {
   .campo:nth-child(4) {
     grid-column: 1/3;
   }
-}
-@media (min-width: 768px) {
   .w-sm-100 {
     width: auto;
   }
@@ -321,17 +315,13 @@ footer {
     flex-direction: row;
     justify-content: center;
   }
-}
-/*Menu Principal*/
-@media (min-width: 480px) {
+  /*Menu Principal*/
   .menuPrincipal {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
   }
-}
-/*Menu Nosotros*/
-@media (min-width: 480px) {
+  /*Menu Nosotros*/
   .menu {
     grid-template-columns: repeat(2, 1fr);
   }

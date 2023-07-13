@@ -1,0 +1,46 @@
+/*Formulario*/
+.formulario {
+    background-color: $color-formulario;
+    width: min( 600px, 100% );
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    fieldset {
+        border: none;
+    }
+    legend {
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: $color-secundario;
+    }
+}
+.campo {
+    margin-bottom: 10px;
+    label {
+        color:$color-terceario;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }textarea {
+        height: 150px;
+    }
+}
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+.w-sm-100 {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+.alinear-derecha {
+    justify-content: flex-end;
+}

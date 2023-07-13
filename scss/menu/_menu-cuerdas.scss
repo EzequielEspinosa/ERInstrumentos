@@ -1,0 +1,11 @@
+/*Menu-cuerdas*/
+.instrumentosC{
+    grid-template-columns: none;
+}
+.menuPrincipal{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+}
