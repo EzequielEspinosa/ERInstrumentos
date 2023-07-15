@@ -18,18 +18,18 @@ h3{
 h1, h2, h3{
     text-align: center;
     text-transform: uppercase;
-    color:$color-terceario;
+    color:map-get($fondos, color-terceario);
     padding: 5px;
 }
 p{
     text-align: center;
-    color: $color-terceario;
+    color: map-get($fondos, color-terceario);
 }
 
 body{
     font-family: $fuente-pricipal;
     text-align: center;
-    background-color: $color-principal;
+    background-color: map-get($fondos, color-principal);
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -46,12 +46,12 @@ img{
     border-radius: 5px;
 }
 .boton{
-    color:$color-principal;
+    color:map-get($fondos, color-principal);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
-    background-color: $color-terceario;
+    background-color:map-get($fondos, color-terceario);
     border-radius: 5px;
     padding:1px 5px;                              
     width: auto;

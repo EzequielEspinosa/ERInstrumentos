@@ -1,6 +1,6 @@
 /*Navegacion Principal*/
 .navegacionPrincipal{
-    background-color:$color-primario;
+    background-color:map-get($fondos, color-primario);
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,6 @@
         text-transform: uppercase;
         color: $color-principal;
         font-weight: normal;
-        border: 2px solid $color-principal;
         border-radius: 13px;
         padding: 2px 5px;
         margin: 5px;
@@ -21,11 +20,11 @@
 }
 
 .dropdown-menu{
-    background-color:$color-primario;
+    background-color:map-get($fondos, color-primario);
     text-align: center;
 }
 .dropdown-item:hover{
-    background-color:$color-secundario;
+    background-color:map-get($fondos, color-secundario);
 }
 .show{
     padding-right: 10px;
@@ -34,10 +33,10 @@
     font-family:$fuente-pricipal;
 }
 .btn-outline-success{
-    color:$color-principal;
-    border-color:$color-principal;
+    color:map-get($fondos, color-principal);
+    border-color:map-get($fondos, color-principal);
     &:hover{
-        background-color:$color-secundario;
-        border-color:$color-terceario;
+        background-color:map-get($fondos, color-secundario);
+        border-color:map-get($fondos, color-terceario);
     }
 }

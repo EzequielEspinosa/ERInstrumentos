@@ -1,6 +1,6 @@
 /*Formulario*/
 .formulario {
-    background-color: $color-formulario;
+    background-color: map-get($fondos, color-formulario);
     width: min( 600px, 100% );
     margin: 0 auto;
     padding: 20px;
@@ -14,13 +14,13 @@
         text-transform: uppercase;
         font-weight: 700;
         margin-bottom: 20px;
-        color: $color-secundario;
+        color: map-get($fondos, color-secundario);
     }
 }
 .campo {
     margin-bottom: 10px;
     label {
-        color:$color-terceario;
+        color:map-get($fondos, color-terceario);
         font-weight: bold;
         margin-bottom: 5px;
         display: block;
