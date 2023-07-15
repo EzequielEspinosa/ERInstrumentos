@@ -6,12 +6,16 @@
     background-size: cover;
     height: 100%;
     padding: 15px;
+    h1{
+        font-weight: bold;
+    }
 }
 
 .alineacion{
     display: flex;
     align-items: end;
     justify-content: space-between;
+    margin: 10px;
     img{
         width: 100px;
         height: 100px;

@@ -1,3 +1,2 @@
 cambiar de tamaño las imagenes
-mejorear el footer
-agragar margenes y padding en algunos elementos.
+modificar el grid de vientos y cuerdas

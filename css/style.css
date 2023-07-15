@@ -56,6 +56,7 @@ img {
   border-radius: 5px;
   padding: 1px 5px;
   width: auto;
+  margin: inherit;
 }
 
 /*Grid Area*/
@@ -92,11 +93,15 @@ footer {
   height: 100%;
   padding: 15px;
 }
+.encabezado h1 {
+  font-weight: bold;
+}
 
 .alineacion {
   display: flex;
   align-items: end;
   justify-content: space-between;
+  margin: 10px;
 }
 .alineacion img {
   width: 100px;
