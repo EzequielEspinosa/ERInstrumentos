@@ -1,0 +1,5 @@
+cambiar de tamaño las imagenes
+crear maps
+mejorear el footer
+sacar los bordes de la nav
+agragar margenes y padding en algunos elementos.
