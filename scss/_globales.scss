@@ -20,6 +20,7 @@ h1, h2, h3{
     text-transform: uppercase;
     color:map-get($fondos, color-terceario);
     padding: 5px;
+    margin: 10px;
 }
 p{
     text-align: center;
