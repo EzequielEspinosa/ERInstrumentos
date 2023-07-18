@@ -219,11 +219,20 @@ footer {
 
 /*menu-nosotros*/
 .menu {
+  width: 400px;
   display: grid;
   column-gap: 10px;
   row-gap: 10px;
   justify-items: center;
   align-items: center;
+}
+.menu img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.menu p {
+  width: 300px;
 }
 
 /*Formulario*/
