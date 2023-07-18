@@ -14,7 +14,7 @@
     .menuPrincipal{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-        justify-content: center;
+        
     }
 }
 /*Navegacion principal*/
@@ -27,7 +27,6 @@
     .menuPrincipal{
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
-        align-items: center;
     }
     /*Menu Nosotros*/
     .menu{

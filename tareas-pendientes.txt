@@ -1,2 +1,4 @@
 cambiar de tamaño las imagenes
-modificar el grid de vientos y cuerdas
+aplicar mixin sass
+aplicar animaciones en aside y section.
+en los logos de face y insta aplicar animaciones
