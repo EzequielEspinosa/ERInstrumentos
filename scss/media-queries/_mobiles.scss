@@ -1,6 +1,6 @@
 /*MOBILES*/
 /*body*/
-@media (min-width: 300px) and (max-width: 500px){
+@media (min-width: 320px) and (max-width: 576px){
     body{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -14,7 +14,7 @@
     .menuPrincipal{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-        
+        justify-items: center;
     }
 }
 /*Navegacion principal*/
@@ -31,5 +31,6 @@
     /*Menu Nosotros*/
     .menu{
         grid-template-columns: repeat(2, 1fr);
+
     }
 }

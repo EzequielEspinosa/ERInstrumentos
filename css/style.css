@@ -210,18 +210,22 @@ footer {
   column-gap: 10px;
   row-gap: 10px;
 }
-.menuPrincipal .card {
-  width: 100%;
-}
 
 /*menu-nosotros*/
 .menu {
   width: 100%;
+  height: 500px;
   display: grid;
   column-gap: 10px;
-  row-gap: 10px;
+  row-gap: 15px;
   justify-items: center;
   align-items: center;
+  margin-top: 10px;
+}
+.menu img {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
 }
 
 /*Formulario*/
@@ -288,6 +292,7 @@ footer {
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -321,7 +326,7 @@ footer {
 }
 /*MOBILES*/
 /*body*/
-@media (min-width: 300px) and (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 576px) {
   body {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "nav" "main" "aside" "section" "footer";
@@ -329,6 +334,7 @@ footer {
   .menuPrincipal {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
   }
 }
 /*Navegacion principal*/
