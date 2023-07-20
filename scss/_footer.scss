@@ -1,9 +1,5 @@
 /*Footer*/
-.container{
-    p{
-        margin-top: 10px;
-    }
-    .iconos{
+.iconos{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -12,8 +8,8 @@
             width: 100px;
             border-radius: 50%;
         }
-    }
 }
+
 .footer{
     background-color: map-get($fondos, color-secundario);
     padding: 10px;

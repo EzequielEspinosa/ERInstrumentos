@@ -204,35 +204,24 @@ footer {
   grid-template-columns: none;
 }
 
-.instrumentosCuerdas {
-  display: grid;
-  justify-items: center;
-}
-
 .menuPrincipal {
-  width: 80%;
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 10px;
   row-gap: 10px;
 }
+.menuPrincipal .card {
+  width: 100%;
+}
 
 /*menu-nosotros*/
 .menu {
-  width: 400px;
+  width: 100%;
   display: grid;
   column-gap: 10px;
   row-gap: 10px;
   justify-items: center;
   align-items: center;
-}
-.menu img {
-  height: 300px;
-  width: 300px;
-  margin-bottom: 10px;
-}
-.menu p {
-  width: 300px;
 }
 
 /*Formulario*/
@@ -290,15 +279,12 @@ footer {
 }
 
 /*Footer*/
-.container p {
-  margin-top: 10px;
-}
-.container .iconos {
+.iconos {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.container .iconos img {
+.iconos img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -335,7 +321,7 @@ footer {
 }
 /*MOBILES*/
 /*body*/
-@media (min-width: 320px) and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 500px) {
   body {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "nav" "main" "aside" "section" "footer";
