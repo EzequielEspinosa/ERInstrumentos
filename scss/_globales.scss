@@ -42,9 +42,7 @@ body{
 }
 
 img{
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
+    @include imagenes-border(200px, 200px, 5px);
 }
 .boton{
     color:map-get($fondos, color-principal);

@@ -1,0 +1,17 @@
+
+@mixin flex-direccion ($display, $ejeX, $ejeY){
+    display: $display;
+    justify-content: $ejeX;
+    align-items: $ejeY;
+}
+
+@mixin imagenes ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin imagenes-border ($ancho, $alto, $borde){
+    width: $ancho;
+    height: $alto;
+    border-radius: $borde;
+}

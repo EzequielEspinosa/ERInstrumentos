@@ -1,12 +1,8 @@
 /*Footer*/
 .iconos{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-direccion(flex, space-between, center);
         img{
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
+            @include imagenes-border(100px, 100px, 50%);
             margin-bottom: 10px;
         }
 }

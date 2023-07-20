@@ -1,4 +1,4 @@
-cambiar de tamaño las imagenes
+
 aplicar mixin sass
 aplicar animaciones en aside y section.
 en los logos de face y insta aplicar animaciones
