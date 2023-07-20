@@ -28,12 +28,16 @@
 }
 
 .btn-primary{
-    background-color:$color-secundario;
+    background: linear-gradient(90deg, rgba(146,111,52,1) 0%, rgba(192,160,104,1) 51%, rgba(238,198,125,1) 100%);
     border-color: $color-principal;
     color:$color-principal;
+    transition: width 2s;
     &:hover{
-        background-color: $color-primario;
+        background: linear-gradient(90deg, rgba(117,89,41,1) 0%, rgba(161,135,89,1) 51%, rgba(223,184,111,1) 100%);
         color:$color-principal;
         border-color: $color-principal;
+        width: 130px;
+        height: 45px;
+        
     }
 }

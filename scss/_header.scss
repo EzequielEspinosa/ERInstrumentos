@@ -17,5 +17,10 @@
     img{
         @include imagenes(100px, 100px);
         border-radius: 50%;
+        animation-name: animacion;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
     }
 }

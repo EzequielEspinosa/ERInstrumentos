@@ -12,6 +12,20 @@
   align-items: center;
 }
 
+@keyframes animacion {
+  0% {
+    width: 120px;
+    height: 120px;
+  }
+  50% {
+    width: 150px;
+    height: 150px;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
 /*Globales*/
 *, *:before, *:after {
   box-sizing: border-box;
@@ -65,7 +79,7 @@ img {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: bold;
-  background-color: white;
+  background: linear-gradient(90deg, rgb(116, 116, 115) 0%, rgb(181, 177, 171) 51%, rgb(255, 249, 238) 100%);
   border-radius: 5px;
   padding: 1px 5px;
   width: auto;
@@ -120,6 +134,11 @@ footer {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
 }
 
 /*Navegacion Principal*/
@@ -202,14 +221,17 @@ footer {
 }
 
 .btn-primary {
-  background-color: #926f34;
+  background: linear-gradient(90deg, rgb(146, 111, 52) 0%, rgb(192, 160, 104) 51%, rgb(238, 198, 125) 100%);
   border-color: black;
   color: black;
+  transition: width 2s;
 }
 .btn-primary:hover {
-  background-color: #c0a068;
+  background: linear-gradient(90deg, rgb(117, 89, 41) 0%, rgb(161, 135, 89) 51%, rgb(223, 184, 111) 100%);
   color: black;
   border-color: black;
+  width: 130px;
+  height: 45px;
 }
 
 /*Menu-cuerdas*/
@@ -303,6 +325,11 @@ footer {
   height: 100px;
   border-radius: 50%;
   margin-bottom: 10px;
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
 }
 
 .footer {
