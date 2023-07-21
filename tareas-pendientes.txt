@@ -1,2 +1,1 @@
 aplicar animaciones en aside y section.
-en los logos de face y insta aplicar animaciones
