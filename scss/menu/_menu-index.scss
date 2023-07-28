@@ -1,43 +1,51 @@
 /*Menu-index*/
+
+/*videos*/
 .videos h2{
     text-transform: none;
 }
 .videos iframe{
     border-radius: 5px;
     width: 80%;
-    height: 80%;
+    height: 300px;
 }
+
+/* Aside y section*/
 .historia{
     width: auto;
-    margin-top: 10px;
+    margin-top: 15px;
+    padding: 15px 30px;
 }
 .card{
-    background-color:$color-primario;
+    background-color:map-get($fondos, color-primario);
     img{
-        padding: 5px;
+        padding: 10px;
+        border-radius: 5px;
     }
+}
+.card-body{
+    height: 370px;
 }
 
 .card-title{
-    color: $color-principal;
+    color: map-get($fondos, color-principal); 
     font-weight: bold;
 }
 .card-text{
     font-family: 'Krub', sans-serif;
-    color:$color-principal;
+    color:map-get($fondos, color-principal);
+    height: 195px;
 }
 
 .btn-primary{
     background: linear-gradient(90deg, rgba(146,111,52,1) 0%, rgba(192,160,104,1) 51%, rgba(238,198,125,1) 100%);
-    border-color: $color-principal;
-    color:$color-principal;
+    border: none;
+    color:map-get($fondos, color-principal);
     transition: width 2s;
     &:hover{
         background: linear-gradient(90deg, rgba(117,89,41,1) 0%, rgba(161,135,89,1) 51%, rgba(223,184,111,1) 100%);
-        color:$color-principal;
-        border-color: $color-principal;
+        color:map-get($fondos, color-terceario);
+        border: none;
         width: 130px;
-        height: 45px;
-        
     }
 }

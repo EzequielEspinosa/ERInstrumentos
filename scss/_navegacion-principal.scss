@@ -1,10 +1,10 @@
 /*Navegacion Principal*/
 .navegacionPrincipal{
     background-color:map-get($fondos, color-primario);
-    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 10px;
     a{
         font-size: 25px;
         text-decoration: none;
