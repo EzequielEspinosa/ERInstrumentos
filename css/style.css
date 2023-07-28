@@ -350,6 +350,7 @@ footer {
   display: inline;
   padding: 5px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 /*TABLETS*/
