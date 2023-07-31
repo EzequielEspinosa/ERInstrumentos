@@ -1,13 +1,13 @@
 /*menu-nosotros*/
 .menu{
-    @include imagenes(100%, 500px);
+    width: 100%;
     @extend .display-grid;
-    column-gap: 10px;
+    column-gap: 15px;
     row-gap: 15px;
-    margin-top: 10px;
-
     img{
-        margin: 10px;
-        @include imagenes(300px, 300px);
+        @include imagenes(90%, 90%);
+    }
+    p{
+        width: 90%;
     }
 }
