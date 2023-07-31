@@ -85,6 +85,7 @@ img {
   width: auto;
   height: 40px;
   margin: inherit;
+  border: none;
 }
 .boton:hover {
   color: white;
@@ -267,11 +268,23 @@ footer {
   height: 300px;
 }
 
+/*Ubicacion*/
+.ubicacion-form {
+  grid-template-columns: min-content;
+}
+
+.ubicacion iframe {
+  height: 400px;
+  width: 90%;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
 /*Formulario*/
 .formulario {
   background-color: rgb(57, 56, 56);
-  width: min(600px, 100%);
-  margin: 10px auto;
+  width: min(600px, 90%);
+  margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
 }

@@ -1,9 +1,20 @@
+/*Ubicacion*/
+.ubicacion-form{
+    grid-template-columns: min-content;
+}
+.ubicacion{
+    iframe{
+        height: 400px;
+        width: 90%;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+}
 /*Formulario*/
 .formulario {
     background-color: map-get($fondos, color-formulario);
-    width: min( 600px, 100% );
-    margin: 10px auto;
-
+    width: min( 600px, 90% );
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     fieldset {

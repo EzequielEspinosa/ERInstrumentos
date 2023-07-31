@@ -31,7 +31,6 @@ body{
     font-family: $fuente-pricipal;
     text-align: center;
     background-color: map-get($fondos, color-principal);
-    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -56,6 +55,7 @@ img{
     width: auto;
     height: 40px;
     margin: inherit;
+    border: none;
     &:hover{
         color: map-get($fondos, color-terceario);
     }
