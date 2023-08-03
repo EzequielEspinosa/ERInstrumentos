@@ -270,12 +270,12 @@ footer {
 
 /*Ubicacion*/
 .ubicacion-form {
-  grid-template-columns: min-content;
+  grid-template-columns: none;
 }
 
 .ubicacion iframe {
   height: 400px;
-  width: 90%;
+  width: min(600px, 90%);
   border-radius: 10px;
   margin-right: 10px;
 }
